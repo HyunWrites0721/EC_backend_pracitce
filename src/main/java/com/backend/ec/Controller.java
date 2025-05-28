@@ -1,4 +1,5 @@
 /*
+
 package com.backend.ec;
 
 import org.springframework.web.bind.annotation.*;
@@ -18,17 +19,17 @@ public class Controller {
 
     @GetMapping("/{id}")
     public Article getBoard(@PathVariable Long id) {
-        return service.findById(id).orElse(null);
+        return service.findById(id);
     }
 
     @PostMapping
-    public Article createBoard(@RequestBody BoardDto dto) {
-        return service.save(dto);
+    public Article createBoard(@RequestBody Request req) {
+        return service.save(req);
     }
 
     @PutMapping("/{id}")
-    public Article updateBoard(@PathVariable Long id, @RequestBody BoardDto dto) {
-        return service.update(id, dto);
+    public Article updateBoard(@PathVariable Long id, @RequestBody Request req) {
+        return service.update(id, req);
     }
 
     @DeleteMapping("/{id}")
@@ -36,4 +37,5 @@ public class Controller {
         service.delete(id);
     }
 }
+
 */
