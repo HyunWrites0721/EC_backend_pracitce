@@ -1,5 +1,3 @@
-/*
-
 package com.backend.ec;
 
 import org.springframework.web.bind.annotation.*;
@@ -37,5 +35,3 @@ public class Controller {
         service.delete(id);
     }
 }
-
-*/
